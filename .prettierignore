@@ -1,0 +1,12 @@
+node_modules/**/*
+.cache/**/*
+build
+public
+.editorconfig
+.eslintignore
+.gitignore
+.nvmrc
+.stylelintrc
+.prettierignore
+.eslintrc.js
+*.json

@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+          ],
+        "module": "esnext",
+        "noEmit": true,
+        "sourceMap": true,
+        "strictPropertyInitialization": true
+    },
+    "exclude": ["public", "build", ".cache/**/*", "node_modules/**/*"],
+    "include": ["src", "global.d.ts"]
+}

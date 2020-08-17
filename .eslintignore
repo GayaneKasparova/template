@@ -1,0 +1,7 @@
+// .eslintignore
+node_modules/**/*
+build/*
+public/*
+src/lib/**/*
+src/Svg/**/*
+src/react-app-env.d.ts

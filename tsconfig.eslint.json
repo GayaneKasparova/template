@@ -1,0 +1,10 @@
+/* https://github.com/typescript-eslint/typescript-eslint/issues/853#issuecomment-521523708 */
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true
+    },
+    "exclude": ["public", "build", ".cache/**/*", "node_modules/**/*"],
+    "include": ["src", "**/*.tsx", "**/*.ts", "**/*.js"]
+}

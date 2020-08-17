@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# skip husky hooks by setting the NO_HUSKY env var
+[[ ! -z $NO_HUSKY ]] && exit 0
+
+# Avoid running husky hooks when push :branch or --delete
+[[ $HUSKY_GIT_STDIN =~ 'delete' ]] && exit 0
+
+exit 1

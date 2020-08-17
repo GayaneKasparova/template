@@ -1,0 +1,35 @@
+{
+    "processors": [
+        [
+            "stylelint-processor-styled-components",
+            {
+                "parserPlugins": [
+                    "jsx",
+                    "objectRestSpread",
+                    ["decorators", { "decoratorsBeforeExport": true }],
+                    "classProperties",
+                    "exportExtensions",
+                    "asyncGenerators",
+                    "functionBind",
+                    "functionSent",
+                    "dynamicImport",
+                    "optionalCatchBinding",
+                    "optionalChaining",
+                    "nullishCoalescingOperator"
+                ]
+            }
+        ]
+    ],
+    "extends": ["stylelint-config-recommended", "stylelint-config-styled-components"],
+    "rules": {
+        "max-line-length": 160,
+        "string-quotes": "single",
+        "max-empty-lines": 2,
+        "no-missing-end-of-source-newline": true,
+        "number-leading-zero": "always",
+        "number-no-trailing-zeros": true,
+        "unit-case": "lower",
+        "block-closing-brace-newline-after": "always",
+        "declaration-no-important": true
+    }
+}
